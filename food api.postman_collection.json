@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "573edc48-7371-4c61-8fdc-25206d3e8c60",
+		"name": "food api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37378979"
+	},
+	"item": [
+		{
+			"name": "create a new food",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"nasi goreng\",\r\n    \"price\": 12000,\r\n    \"description\": \"delicious\",\r\n    \"id\": \"v1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1323/api/v1/foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"api",
+						"v1",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all foods",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/api/v1/foods",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"api",
+						"v1",
+						"foods"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get food byid",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/api/v1/foods/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"api",
+						"v1",
+						"foods",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update food",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"PASTA\",\r\n    \"price\": 12000,\r\n    \"description\": \"delicious\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:1323/api/v1/foods/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"api",
+						"v1",
+						"foods",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete food",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:1323/api/v1/foods/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1323",
+					"path": [
+						"api",
+						"v1",
+						"foods",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
